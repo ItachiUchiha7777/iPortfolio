@@ -258,4 +258,19 @@
    */
   new PureCounter();
 
+ // Calculate the age based on a given birthdate (July 16, 2005)
+const birthdate = new Date('2005-07-16');
+const currentDate = new Date();
+const ageInMilliseconds = currentDate - birthdate;
+const millisecondsInYear = 1000 * 60 * 60 * 24 * 365.25; // Taking into account leap years
+const ageInYears = Math.floor(ageInMilliseconds / millisecondsInYear);
+
+// Update the age displayed on the webpage
+const ageElement = document.getElementById('age');
+ageElement.textContent = ageInYears.toString();
+
 })()
+
+
+
+
