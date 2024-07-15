@@ -21,7 +21,22 @@
     </style>
 </head>
 <body>
-    <iframe src="Rohit_Gusain.pdf" style="width: 100%; height:100%" frameborder="0"></iframe>
+   
+   
+</div>
+    <div id="viewer" style="width: 100%; height: 500px;"></div>
+    <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+    <script>
+      const config = { 
+        documentId: '6f86cfa5-53a2-44db-9c5f-7dedc24fa54a',
+        darkMode: true, 
+        appBarColored: true,
+        themeColor: '#405D72'
+      };
+      CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+        
+      });
+    </script>
 </body>
 </html>
 
