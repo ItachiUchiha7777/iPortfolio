@@ -1,45 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="assets/img/favicon.png" rel="icon">
-
-  <title>Rohit Gusain - App and Web Developer Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
+        #pdf-viewer {
             width: 100%;
-            height: 100%;
-            border: none;
+            height: 600px;
+          
+            
         }
     </style>
 </head>
-<body>
-   
-   
-</div>
-    <div id="viewer" style="width: 100%; height: 500px;"></div>
-    <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
-    <script>
-      const config = { 
-        documentId: '6f86cfa5-53a2-44db-9c5f-7dedc24fa54a',
-        darkMode: true, 
-        appBarColored: true,
-        themeColor: '#405D72'
-      };
-      CloudPDF(config, document.getElementById('viewer')).then((instance) => {
-        
-      });
-    </script>
+<body style="text-align: center;color:#131842;background-color:#758694">
+    <h1 >My CV</h1>
+    <div id="pdf-viewer">
+        <iframe src="https://drive.google.com/file/d/1QelmfJmIZpnLOxOexJurZVVak0F0qzxi/preview" width="100%" height="100%" allow="autoplay"></iframe>
+    </div>
 </body>
 </html>
-
